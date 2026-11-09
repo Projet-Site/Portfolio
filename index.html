@@ -226,42 +226,78 @@
             </div>
         </section>
 
-        <!-- Section Stage -->
+        <!-- Section Stage Révisée -->
         <section id="stages" class="container section reveal">
             <div class="section-header">
-                <span class="section-badge">Expérience Terrain</span>
-                <h2 class="section-title">Stage en Entreprise — Lacoste Dactyl Bureau & École</h2>
-                <p class="section-desc">Projet majeur : Conception et déploiement d'une solution d'enquêtes de satisfaction automatisées.</p>
+                <span class="section-badge">Expérience en Entreprise</span>
+                <h2 class="section-title">Stage de Professionnalisation</h2>
+                <p class="section-desc">Développement d'une solution complète de gestion et d'automatisation d'enquêtes de satisfaction.</p>
             </div>
 
             <div class="stages-timeline">
-                <div class="stage-entry">
-                    <div class="stage-time">
-                        <span class="stage-badge stage-badge-active">SIO 1</span>
-                        <span class="stage-duration">Pôle Développement Web & Logiciel</span>
-                    </div>
+                <div class="stage-entry" style="grid-template-columns: 1fr;">
                     <div class="card stage-card">
-                        <div class="stage-top" style="display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap;">
+                        <div class="stage-top" style="display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; border-bottom: 1px solid var(--border-subtle); padding-bottom: 1rem; margin-bottom: 1.25rem;">
                             <div>
-                                <h3>Développeur d'Applications & Automatisation</h3>
-                                <p class="company-name"><i class="fas fa-building"></i> Lacoste Dactyl Bureau & École</p>
+                                <span class="stage-badge stage-badge-active">BTS SIO 1</span>
+                                <h3 style="margin-top: 0.3rem;">Développeur Web & Logiciel Stagiaire</h3>
+                                <p class="company-name" style="margin-bottom: 0;"><i class="fas fa-building"></i> Lacoste Dactyl Bureau & École</p>
                             </div>
-                            <img src="document/Logo_LacosteDBE_.png" alt="Logo Lacoste Dactyl Bureau & École" style="max-height: 45px; width: auto;">
+                            <img src="document/Logo_LacosteDBE_.png" alt="Logo Lacoste Dactyl Bureau & École" style="max-height: 48px; width: auto;">
                         </div>
-                        <div class="stage-content" style="margin-top: 1rem;">
-                            <p><strong>Détail du projet réalisé :</strong></p>
-                            <ul style="margin-left: 1.25rem; margin-bottom: 1.5rem; font-size: 0.9rem; color: var(--text-body);">
-                                <li><strong>Application WinDev d'administration No-Code :</strong> Développement d'une interface logicielle permettant à la responsable client d'éditer les enquêtes (sections, questions, échelles de notation, visuels) sans coder.</li>
-                                <li><strong>Architecture Web MVC & Modélisation UML :</strong> Conception orientée objet (`FormulaireEnquete.html`, `EnqueteController`, `EnqueteRepository`) et schéma BDD SQL Server avec génération de tokens sécurisés par client.</li>
-                                <li><strong>Formulaire Web Client Responsive :</strong> Intégration de l'interface d'enquête dynamique avec calcul de progression (%), appels AJAX et contrôle des questions obligatoires.</li>
-                            </ul>
 
-                            <!-- Galerie de Preuves du Projet -->
-                            <h4 style="font-size: 1rem; font-weight: 700; color: var(--text-heading); margin-bottom: 0.8rem;">
-                                <i class="fas fa-folder-open" style="color: var(--primary);"></i> Galerie des dossiers de preuve :
-                            </h4>
+                        <div class="stage-content">
+                            <!-- En-tête contextuel du projet -->
+                            <div style="background: var(--primary-light); border: 1px solid var(--primary-border); padding: 1rem 1.25rem; border-radius: var(--radius-sm); margin-bottom: 1.5rem;">
+                                <h4 style="color: var(--primary); font-size: 1rem; font-weight: 700; margin-bottom: 0.3rem;">
+                                    <i class="fas fa-bullseye"></i> Objectif Métier
+                                </h4>
+                                <p style="font-size: 0.9rem; color: var(--text-body); margin: 0;">
+                                    Automatiser la mesure de la satisfaction client après chaque commande, en offrant à la responsable du service client un outil d'administration simple et autonome sans aucune compétence technique requise.
+                                </p>
+                            </div>
+
+                            <!-- Grille des 3 axes techniques -->
+                            <div class="grid grid-3" style="gap: 1.2rem; margin-bottom: 1.5rem;">
+                                <div style="background: #fff; border: 1px solid var(--border); padding: 1.1rem; border-radius: var(--radius-sm);">
+                                    <h5 style="color: var(--text-heading); font-size: 0.95rem; font-weight: 700; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.4rem;">
+                                        <i class="fas fa-desktop" style="color: var(--primary);"></i> Application Admin (WinDev)
+                                    </h5>
+                                    <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.45;">
+                                        Développement d'un logiciel No-Code sous WinDev (W-Langage) avec 6 modules permettant d'éditer les sections, questions, visuels et d'exporter la liste des destinataires.
+                                    </p>
+                                </div>
+
+                                <div style="background: #fff; border: 1px solid var(--border); padding: 1.1rem; border-radius: var(--radius-sm);">
+                                    <h5 style="color: var(--text-heading); font-size: 0.95rem; font-weight: 700; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.4rem;">
+                                        <i class="fas fa-globe" style="color: var(--primary);"></i> Formulaire Client Web
+                                    </h5>
+                                    <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.45;">
+                                        Formulaire web responsive multi-étapes avec calcul dynamique de la progression (%), authentification sécurisée par jeton unique (`token`) et contrôle de saisie en temps réel.
+                                    </p>
+                                </div>
+
+                                <div style="background: #fff; border: 1px solid var(--border); padding: 1.1rem; border-radius: var(--radius-sm);">
+                                    <h5 style="color: var(--text-heading); font-size: 0.95rem; font-weight: 700; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.4rem;">
+                                        <i class="fas fa-database" style="color: var(--primary);"></i> Modélisation BDD & Workflow
+                                    </h5>
+                                    <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.45;">
+                                        Conception de la BDD SQL Server (tables des enquêtes, réponses, jetons d'accès) et automatisation de l'envoi du mail post-commande ainsi que de l'export des résultats sous Excel.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Galerie des Preuves avec mention de confidentialité -->
+                            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.8rem;">
+                                <h4 style="font-size: 1rem; font-weight: 700; color: var(--text-heading); margin: 0;">
+                                    <i class="fas fa-folder-open" style="color: var(--primary);"></i> Galerie des dossiers de preuve :
+                                </h4>
+                                <span style="font-size: 0.78rem; color: var(--text-muted); font-style: italic;">
+                                    <i class="fas fa-lock"></i> Données anonymisées — Dossier complet présenté lors de l'oral E5
+                                </span>
+                            </div>
+
                             <div class="proof-gallery-grid">
-                                <!-- Preuve 1 : WinDev -->
                                 <div class="proof-card" onclick="openModal('modal-windev')">
                                     <div class="proof-thumb">
                                         <img src="document/Windev/PAGEENQUETE.png" alt="Aperçu WinDev" onerror="this.src='document/Logo_LacosteDBE_.png'">
@@ -269,11 +305,10 @@
                                     <div class="proof-info">
                                         <span class="proof-tag">Logiciel WinDev</span>
                                         <h5>Interface Admin Client</h5>
-                                        <p>Gestion des 6 onglets d'enquêtes</p>
+                                        <p>Gestion des 6 modules d'enquêtes</p>
                                     </div>
                                 </div>
 
-                                <!-- Preuve 2 : Web Enquête -->
                                 <div class="proof-card" onclick="openModal('modal-web')">
                                     <div class="proof-thumb">
                                         <img src="document/enquete/c1.jpg" alt="Aperçu Formulaire Web" onerror="this.src='document/Logo_LacosteDBE_.png'">
@@ -285,7 +320,6 @@
                                     </div>
                                 </div>
 
-                                <!-- Preuve 3 : BDD & UML -->
                                 <div class="proof-card" onclick="openModal('modal-uml')">
                                     <div class="proof-thumb">
                                         <img src="document/bdd_UML/ENQUETEFINALE.png" alt="Aperçu UML / BDD" onerror="this.src='document/Logo_LacosteDBE_.png'">
@@ -303,56 +337,56 @@
             </div>
         </section>
 
-    <!-- Modales d'Aperçu des Preuves (Pop-ups d'images) -->
-    <div id="modal-windev" class="modal" onclick="closeModal('modal-windev')">
-        <div class="modal-content" onclick="event.stopPropagation()">
-            <span class="close-modal" onclick="closeModal('modal-windev')">&times;</span>
-            <h3>Logiciel WinDev — Interface de la Responsable Client</h3>
-            <p>Vue de l'application permettant la création des sections, des questions et la gestion des destinataires sans codage.</p>
-            <div class="modal-grid">
-                <img src="document/Windev/PAGEENQUETE.png" alt="Page Enquête WinDev">
-                <img src="document/Windev/page_Section.png" alt="Gestion des Sections">
-                <img src="document/Windev/Page_Question.png" alt="Gestion des Questions">
-                <img src="document/Windev/Page_reponse_possible.png" alt="Réponses Possibles">
-                <img src="document/Windev/Liste_des_destinataires.png" alt="Liste Destinataires">
-                <img src="document/Windev/Exportation_en_PDF.png" alt="Export des liens tokens">
+        <!-- Modales d'Aperçu des Preuves -->
+        <div id="modal-windev" class="modal" onclick="closeModal('modal-windev')">
+            <div class="modal-content" onclick="event.stopPropagation()">
+                <span class="close-modal" onclick="closeModal('modal-windev')">&times;</span>
+                <h3>Logiciel WinDev — Interface de la Responsable Client</h3>
+                <p>Vue de l'application permettant la création des sections, des questions et la gestion des destinataires sans codage.</p>
+                <div class="modal-grid">
+                    <img src="document/Windev/PAGEENQUETE.png" alt="Page Enquête WinDev">
+                    <img src="document/Windev/page_Section.png" alt="Gestion des Sections">
+                    <img src="document/Windev/Page_Question.png" alt="Gestion des Questions">
+                    <img src="document/Windev/Page_reponse_possible.png" alt="Réponses Possibles">
+                    <img src="document/Windev/Liste_des_destinataires.png" alt="Liste Destinataires">
+                    <img src="document/Windev/Exportation_en_PDF.png" alt="Export des liens tokens">
+                </div>
             </div>
         </div>
-    </div>
 
-    <div id="modal-web" class="modal" onclick="closeModal('modal-web')">
-        <div class="modal-content" onclick="event.stopPropagation()">
-            <span class="close-modal" onclick="closeModal('modal-web')">&times;</span>
-            <h3>Formulaire Web Client — Rendu Responsive & Contrôle de Saisie</h3>
-            <p>Aperçu du parcours utilisateur avec barre de progression par étape (%), validation des questions et écran de confirmation.</p>
-            <div class="modal-grid">
-                <img src="document/enquete/c1.jpg" alt="Étape 1 Commercial">
-                <img src="document/enquete/c3.png" alt="Étape Catalogue">
-                <img src="document/enquete/QUESTION_OUBLIE.png" alt="Alerte Questions Oubliées">
-                <img src="document/enquete/envoie.png" alt="Fin de l'enquête">
+        <div id="modal-web" class="modal" onclick="closeModal('modal-web')">
+            <div class="modal-content" onclick="event.stopPropagation()">
+                <span class="close-modal" onclick="closeModal('modal-web')">&times;</span>
+                <h3>Formulaire Web Client — Rendu Responsive & Contrôle de Saisie</h3>
+                <p>Aperçu du parcours utilisateur avec barre de progression par étape (%), validation des questions et écran de confirmation.</p>
+                <div class="modal-grid">
+                    <img src="document/enquete/c1.jpg" alt="Étape 1 Commercial">
+                    <img src="document/enquete/c3.png" alt="Étape Catalogue">
+                    <img src="document/enquete/QUESTION_OUBLIE.png" alt="Alerte Questions Oubliées">
+                    <img src="document/enquete/envoie.png" alt="Fin de l'enquête">
+                </div>
             </div>
         </div>
-    </div>
 
-    <div id="modal-uml" class="modal" onclick="closeModal('modal-uml')">
-        <div class="modal-content" onclick="event.stopPropagation()">
-            <span class="close-modal" onclick="closeModal('modal-uml')">&times;</span>
-            <h3>Architecture Technique — Diagramme UML & Schéma BDD</h3>
-            <p>Modélisation du patron MVC (Controller, Repository, Data Models) et structure des tables sous SQL Server.</p>
-            <div class="modal-grid modal-grid-large">
-                <img src="document/bdd_UML/ENQUETEFINALE.png" alt="Diagramme de Classes UML MVC">
-                <img src="document/bdd_UML/FIGMA_FINALE.jpg" alt="Modèle Relationnel BDD SQL Server">
+        <div id="modal-uml" class="modal" onclick="closeModal('modal-uml')">
+            <div class="modal-content" onclick="event.stopPropagation()">
+                <span class="close-modal" onclick="closeModal('modal-uml')">&times;</span>
+                <h3>Architecture Technique — Diagramme UML & Schéma BDD</h3>
+                <p>Modélisation du patron MVC (Controller, Repository, Data Models) et structure des tables sous SQL Server.</p>
+                <div class="modal-grid modal-grid-large">
+                    <img src="document/bdd_UML/ENQUETEFINALE.png" alt="Diagramme de Classes UML MVC">
+                    <img src="document/bdd_UML/FIGMA_FINALE.jpg" alt="Modèle Relationnel BDD SQL Server">
+                </div>
             </div>
         </div>
-    </div>
 
-        <!-- Section Certifications & Diplômes -->
+        <!-- Section Certifications & Diplômes (Sans Permis) -->
         <section id="certifications" class="container section reveal">
             <div class="section-header">
                 <span class="section-badge">Parcours & Attestations</span>
                 <h2 class="section-title">Diplômes & Certifications</h2>
             </div>
-            <div class="grid grid-3">
+            <div class="grid grid-2" style="max-width: 750px; margin: 0 auto;">
                 <div class="card cert-box">
                     <div class="cert-icon icon-pix"><i class="fas fa-award"></i></div>
                     <h3>Certification PIX</h3>
@@ -364,12 +398,6 @@
                     <h3>Baccalauréat STI2D</h3>
                     <p class="cert-score">Option SIN (Systèmes d'Information et Numérique)</p>
                     <span class="cert-date">Mention Assez Bien — Lycée Pierre-Émile Martin</span>
-                </div>
-                <div class="card cert-box">
-                    <div class="cert-icon icon-code"><i class="fas fa-car"></i></div>
-                    <h3>Permis B & Mobilité</h3>
-                    <p class="cert-score">Véhicule Personnel</p>
-                    <span class="cert-date">Permis de conduire obtenu</span>
                 </div>
             </div>
         </section>
@@ -398,7 +426,6 @@
             </div>
 
             <div class="grid grid-3" style="margin-top: 1.5rem;">
-                <!-- Article 1 -->
                 <article class="card article-card">
                     <div class="article-meta">
                         <span class="badge-month">Juillet 2026</span>
@@ -411,7 +438,6 @@
                     <span class="tag-comp"><i class="fas fa-lightbulb"></i> Analyse & Relecture</span>
                 </article>
 
-                <!-- Article 2 -->
                 <article class="card article-card">
                     <div class="article-meta">
                         <span class="badge-month">Mai 2026</span>
@@ -424,7 +450,6 @@
                     <span class="tag-comp"><i class="fas fa-sitemap"></i> Architecture & Conception</span>
                 </article>
 
-                <!-- Article 3 -->
                 <article class="card article-card">
                     <div class="article-meta">
                         <span class="badge-month">Juin 2026</span>
@@ -442,7 +467,7 @@
             <div class="card" style="margin-top: 1.5rem; background: #fff;">
                 <h3><i class="fas fa-graduation-cap" style="color: var(--primary);"></i> Mon Environnement d'Apprentissage Personnel (EAP)</h3>
                 <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 0.5rem;">
-                    Dans le cadre de mes cours au Lycée Benjamin Franklin et en stage, j'utilise <strong>VS Code</strong> (avec PHP Intelephense, Live Server et Copilot) et <strong>WinDev</strong>, couplés à <strong>Git/GitHub</strong>[cite: 2, 3]. Ma règle d'or pour l'oral E5 : <em>"Aucun copier-coller sans compréhension"</em> — tout code généré par IA est relu, réécrit et testé rigoureusement[cite: 2].
+                    Dans le cadre de mes cours au Lycée Benjamin Franklin et en stage, j'utilise <strong>VS Code</strong> (avec PHP Intelephense, Live Server et Copilot) et <strong>WinDev</strong>, couplés à <strong>Git/GitHub</strong>. Ma règle d'or pour l'oral E5 : <em>"Aucun copier-coller sans compréhension"</em> — tout code généré par IA est relu, réécrit et testé rigoureusement.
                 </p>
             </div>
         </section>
